@@ -240,21 +240,21 @@ public class Helper {
                     table.addCell(" ".repeat(3) + staffMember.getId() + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + staffMember.getName() + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + staffMember.getAddress() + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + "$" + ((Volunteer) staffMember).getSalary() + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", ((Volunteer) staffMember).getSalary()) + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + "$" + staffMember.pay() + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", staffMember.pay()) + " ".repeat(3), cellStyle);
                 } else if (staffMember instanceof SalariedEmployee) {
                     table.addCell(" ".repeat(3) + "Salaried Employee" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + staffMember.getId() + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + staffMember.getName() + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + staffMember.getAddress() + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + "$" + ((SalariedEmployee) staffMember).getSalary() + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + "$" + ((SalariedEmployee) staffMember).getBonus() + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", ((SalariedEmployee) staffMember).getSalary()) + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", ((SalariedEmployee) staffMember).getBonus()) + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + "$" + staffMember.pay() + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", staffMember.pay()) + " ".repeat(3), cellStyle);
                 } else if (staffMember instanceof HourlySalaryEmployee) {
                     table.addCell(" ".repeat(3) + "Hourly Employee" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + staffMember.getId() + " ".repeat(3), cellStyle);
@@ -263,8 +263,8 @@ public class Helper {
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + "---" + " ".repeat(3), cellStyle);
                     table.addCell(" ".repeat(3) + ((HourlySalaryEmployee) staffMember).getHourWorked() + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + ((HourlySalaryEmployee) staffMember).getRate() + " ".repeat(3), cellStyle);
-                    table.addCell(" ".repeat(3) + "$" + staffMember.pay() + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", ((HourlySalaryEmployee) staffMember).getRate()) + " ".repeat(3), cellStyle);
+                    table.addCell(" ".repeat(3) + "$" + String.format("%.2f", staffMember.pay()) + " ".repeat(3), cellStyle);
                 }
             }
 

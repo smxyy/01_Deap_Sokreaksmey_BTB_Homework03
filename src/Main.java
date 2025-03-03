@@ -7,12 +7,13 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<StaffMember> staffMemberList = new ArrayList<>(Arrays.asList(
-                new Volunteer(1, "Tina", "PP", 0.0),
-                new SalariedEmployee(2, "Dana", "KPS", 300.0, 10),
-                new HourlySalaryEmployee(3, "Sokha", "BTB", 60, 10.0),
-                new Volunteer(4, "Lee", "SR", 0.0),
-                new SalariedEmployee(5, "Fy", "KT", 300.0, 20.0),
-                new HourlySalaryEmployee(6, "Ka", "PV", 50, 10.0)
+                new Volunteer(1, "Tep Absora", "PP", 250.9),
+                new SalariedEmployee(2, "Keo Morakot", "KPS", 300.0, 10),
+                new HourlySalaryEmployee(3, "Tep Thida", "BTB", 60, 10.0),
+                new Volunteer(4, "Lee Minho", "SR", 1000.0),
+                new SalariedEmployee(5, "Emma Watson", "KT", 3500.0, 20.5),
+                new HourlySalaryEmployee(6, "Umaru Chan", "PV", 50, 10.0),
+                new SalariedEmployee(7, "Harry Potter", "KT", 2500.0, 20.8)
         ));
         int option;
         do {
